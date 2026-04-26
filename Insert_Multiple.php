@@ -7,6 +7,7 @@ if ($conn->connect_error) {
 }
 //updated version
 // multipol insert
+// FINAL UPDATE PUSH
 $sql = "INSERT INTO multiple (firstName, middleName, lastName, age)
 VALUES 
 
