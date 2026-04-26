@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 $conn = new mysqli("localhost", "root", "", "adv_web");
 
@@ -6,10 +5,11 @@ $conn = new mysqli("localhost", "root", "", "adv_web");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
+//updated version
 // multipol insert
 $sql = "INSERT INTO multiple (firstName, middleName, lastName, age)
 VALUES 
+
 ('John', 'A.', 'Doe', 20),
 ('Jane', 'B.', 'Smith', 22),
 ('Mark', 'C.', 'Lee', 19)";
@@ -22,6 +22,3 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
-=======
-
->>>>>>> 67a16d4db3cd78bdc94c0c64679c18d06c296272
