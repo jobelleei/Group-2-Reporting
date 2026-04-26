@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 $conn = new mysqli("localhost", "root", "", "adv_web");
 
@@ -21,3 +22,6 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
+=======
+
+>>>>>>> 67a16d4db3cd78bdc94c0c64679c18d06c296272
