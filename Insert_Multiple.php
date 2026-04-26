@@ -7,13 +7,13 @@ if ($conn->connect_error) {
 }
 //updated version
 // multipol insert
-// FINAL UPDATE PUSH
+// FINAL UPDATE PUSH1
 $sql = "INSERT INTO multiple (firstName, middleName, lastName, age)
 VALUES 
 
-('John', 'A.', 'Doe', 20),
-('Jane', 'B.', 'Smith', 22),
-('Mark', 'C.', 'Lee', 19)";
+('Dalzen', 'L.', 'Gwaopo', 20),
+('Artot', 'B.', 'Smith', 22),
+('Tata', 'C.', 'Lee', 19)";
 
 if ($conn->query($sql) === TRUE) {
     echo "Multiple records inserted successfully";
