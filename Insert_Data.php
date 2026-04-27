@@ -6,7 +6,7 @@ if ($conn->query($sql) === TRUE) { echo "New record created"; }
 $conn->close();
 ?>
 
-<<?php
+<?php
 $servername = "localhost";
 $username = "username";
 $password = "password";
