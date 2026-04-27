@@ -31,7 +31,7 @@
     }
 
     //sql query to add data
-    if (!empty($firstname) && !empty($lastname)) {
+    if (!empty($firstname) && !empty($lastname)) { //prevents empty insert
         $sql = "INSERT INTO Get_Last_ID (firstname, lastname) 
                 VALUES ('$firstname', '$lastname')";
 
