@@ -1,26 +1,24 @@
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+$conn = new mysqli("localhost", "root", "", "adv_web");
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
+// check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+//updated version
+// multipol insert
+// FINAL UPDATE PUSH1
+$sql = "INSERT INTO multiple (firstName, middleName, lastName, age)
+VALUES 
 
-$sql = "INSERT INTO MyGuests (firstname, lastname, email) VALUES
-('John', 'Doe', 'john@example.com'),
-('Mary', 'Moe', 'mary@example.com'),
-('Julie', 'Dooley', 'julie@example.com')";
+('Dalzen', 'L.', 'Gwaopo', 20),
+('Artot', 'B.', 'Smith', 22),
+('Tata', 'C.', 'Lee', 19)";
 
-if ($conn->multi_query($sql) === TRUE) {
-    echo "New records inserted successfully";
+if ($conn->query($sql) === TRUE) {
+    echo "Multiple records inserted successfully";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: " . $conn->error;
 }
 
 $conn->close();
