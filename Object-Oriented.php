@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Insert Data</title>
+    <title>Get Last ID</title>
 </head>
 
 <body>
