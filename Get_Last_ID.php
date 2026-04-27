@@ -44,8 +44,8 @@ if (!empty($firstname) && !empty($lastname)) {
 }
 
     
-//closing the connection
-$conn->close();
+
+$conn->close(); //closing the connection
 ?>
 
 </body>
